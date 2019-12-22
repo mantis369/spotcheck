@@ -42,7 +42,7 @@ with open(infn, "r") as inf:
 			for t in audio_files:
 				fn = join(local_lib, a, al, t)
 				try:
-					#unlink(fn)
+					unlink(fn)
 					del_count += 1
 				except:
 					print("\t\tFailure: we couldn't delete", t, "by", a, "from album", al)
